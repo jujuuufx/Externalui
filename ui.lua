@@ -257,8 +257,9 @@ function External:Window(properties)
     })
     External:Themify(Items.Status, "subtext", "TextColor3")
 
+    -- CHANGED: Moved X offset from -25 to -38 to push it a tiny bit more to the left
     Items.SettingsBtn = External:Create("ImageButton", {
-        Parent = Items.Footer, AnchorPoint = vec2(1, 0.5), Position = dim2(1, -25, 0.5, 0),
+        Parent = Items.Footer, AnchorPoint = vec2(1, 0.5), Position = dim2(1, -38, 0.5, 0),
         Size = dim2(0, 16, 0, 16), BackgroundTransparency = 1, Image = "rbxassetid://11293977610", ImageColor3 = themes.preset.subtext, ZIndex = 5
     })
     External:Themify(Items.SettingsBtn, "subtext", "ImageColor3")
